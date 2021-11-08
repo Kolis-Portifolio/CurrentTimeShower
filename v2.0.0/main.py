@@ -26,7 +26,7 @@ label.pack(pady=30)
 def killall():
     global running
     running = False
-    sys.exit()
+    
 
 
 running = True
@@ -34,3 +34,4 @@ while running:
     current_time.set(time.ctime().split()[3])
     root.protocol("WM_DELETE_WINDOW", killall)
     root.update()
+sys.exit()
